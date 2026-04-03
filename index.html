@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angemydelson Saint-Bert | Software Engineer & AI Specialist</title>
+  <meta name="description" content="Software Engineer specializing in Machine Learning, Generative AI, and LLM-based systems. Portfolio of Angemydelson Saint-Bert." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>ASB<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#certifications" data-i18n="nav_certifications">Certifications</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag" id="currentFlag">🇺🇸</span>
+          <span class="lang-code" id="currentCode">EN</span>
+          <svg class="lang-chevron" viewBox="0 0 24 24" width="14" height="14"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" role="menu">
+          <button class="lang-option active" data-lang="en" role="menuitem">🇺🇸 English</button>
+          <button class="lang-option" data-lang="pt" role="menuitem">🇧🇷 Português</button>
+          <button class="lang-option" data-lang="fr" role="menuitem">🇫🇷 Français</button>
+          <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
+          <button class="lang-option" data-lang="ht" role="menuitem">🇭🇹 Kreyòl</button>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+      <li><a href="#certifications" data-i18n="nav_certifications">Certifications</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="mobile-langs">
+      <button class="lang-option" data-lang="en">🇺🇸 English</button>
+      <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+      <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+      <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+      <button class="lang-option" data-lang="ht">🇭🇹 Kreyòl</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero_badge">Available for opportunities</span>
+        </div>
+        <h1 class="hero-name">Angemydelson<br /><span class="name-accent">Saint-Bert</span></h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-prefix">I build</span>
+          <span class="hero-typed" id="heroTyped"></span>
+          <span class="hero-cursor">|</span>
+        </div>
+        <p class="hero-description" data-i18n="hero_description">
+          Software Engineer specializing in Generative AI and Machine Learning systems. I build intelligent, real-world solutions using LLMs, RAG architectures, and modern cloud infrastructure — bridging research and production.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">View Projects</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label" data-i18n="stat_years">Years in Tech</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label" data-i18n="stat_projects">AI Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label" data-i18n="stat_certs">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrapper">
+          <div class="hero-img-ring"></div>
+          <div class="hero-img-ring ring-2"></div>
+          <img src="imagens/IMG_0180_web.jpg" alt="Angemydelson Saint-Bert" class="hero-photo" />
+          <div class="hero-img-badge un-badge">
+            <span>🌍</span>
+            <span data-i18n="hero_un_badge">UN Event</span>
+          </div>
+        </div>
+        <div class="hero-floating-cards">
+          <div class="float-card card-ai">
+            <span class="fc-icon">🤖</span>
+            <span class="fc-text">Generative AI</span>
+          </div>
+          <div class="float-card card-python">
+            <span class="fc-icon">🐍</span>
+            <span class="fc-text">Python</span>
+          </div>
+          <div class="float-card card-aws">
+            <span class="fc-icon">☁️</span>
+            <span class="fc-text">AWS Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="about_tag">Who I Am</span>
+        <h2 class="section-title" data-i18n="about_title">Crafting Intelligent Solutions</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="imagens/IMG_0144_web.jpg" alt="Angemydelson at professional event" loading="lazy" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="imagens/IMG_9841_web.jpg" alt="Angemydelson at UN event" loading="lazy" />
+            <div class="about-img-caption">
+              <span>🇺🇳</span>
+              <span data-i18n="about_img_caption">UN Innovation Event</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-lead" data-i18n="about_lead">
+            I'm a Software Engineer from Chapecó, Brazil, with a deep focus on Artificial Intelligence and the practical application of Machine Learning at scale.
+          </p>
+          <p data-i18n="about_para1">
+            My journey started with a passion for algorithms and grew into a specialization in Generative AI — building systems that understand language, retrieve knowledge intelligently, and respond with context and precision.
+          </p>
+          <p data-i18n="about_para2">
+            Currently enrolled in a Professional Master's in Applied Computing at UTFPR, I work at the intersection of academic research and industry engineering. My experience spans from developing LLM pipelines and RAG architectures to deploying production-ready systems on AWS — always with a focus on measurable impact.
+          </p>
+          <p data-i18n="about_para3">
+            I'm multilingual (French & Haitian Creole native, Portuguese fluent, English proficient) and am drawn to international, cross-cultural teams that solve real-world problems through technology.
+          </p>
+          <div class="about-tags">
+            <span class="tag">AI/ML Engineering</span>
+            <span class="tag">LLM Systems</span>
+            <span class="tag">RAG Architecture</span>
+            <span class="tag">Python</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Research-Driven</span>
+          </div>
+          <div class="about-links">
+            <a href="mailto:delsonysuperdel@gmail.com" class="about-link">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              delsonysuperdel@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/angemydelson-saint-bert-900b4b29b" target="_blank" rel="noopener" class="about-link">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="skills_tag">Tech Stack</span>
+        <h2 class="section-title" data-i18n="skills_title">Skills & Technologies</h2>
+        <p class="section-subtitle" data-i18n="skills_subtitle">A curated overview of the tools and technologies I use to build intelligent systems.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- AI / ML -->
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🧠</span>
+            <h3 data-i18n="skills_ai">AI & Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">LLMs</span>
+            <span class="skill-tag tier-1">Generative AI</span>
+            <span class="skill-tag tier-1">RAG Architecture</span>
+            <span class="skill-tag tier-1">NLP</span>
+            <span class="skill-tag tier-2">Embeddings</span>
+            <span class="skill-tag tier-2">Text Pipelines</span>
+            <span class="skill-tag tier-2">Google Gemini</span>
+            <span class="skill-tag tier-2">Hugging Face</span>
+            <span class="skill-tag tier-3">SentenceTransformers</span>
+            <span class="skill-tag tier-3">Amazon Comprehend</span>
+            <span class="skill-tag tier-3">Amazon Rekognition</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">💻</span>
+            <h3 data-i18n="skills_lang">Languages & Frameworks</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Python</span>
+            <span class="skill-tag tier-1">TypeScript</span>
+            <span class="skill-tag tier-1">Node.js</span>
+            <span class="skill-tag tier-2">React</span>
+            <span class="skill-tag tier-2">TailwindCSS</span>
+            <span class="skill-tag tier-2">SQL</span>
+            <span class="skill-tag tier-3">C</span>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">☁️</span>
+            <h3 data-i18n="skills_cloud">Cloud & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">AWS</span>
+            <span class="skill-tag tier-1">Docker</span>
+            <span class="skill-tag tier-2">Amazon SageMaker</span>
+            <span class="skill-tag tier-2">Amazon Bedrock</span>
+            <span class="skill-tag tier-2">Amazon Kendra</span>
+            <span class="skill-tag tier-2">Amazon Lex</span>
+            <span class="skill-tag tier-3">Terraform</span>
+            <span class="skill-tag tier-3">Serverless</span>
+          </div>
+        </div>
+
+        <!-- Backend & Data -->
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🗄️</span>
+            <h3 data-i18n="skills_backend">Backend & Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">REST APIs</span>
+            <span class="skill-tag tier-1">MongoDB</span>
+            <span class="skill-tag tier-1">ChromaDB</span>
+            <span class="skill-tag tier-2">Vector Databases</span>
+            <span class="skill-tag tier-2">Document Ingestion</span>
+            <span class="skill-tag tier-2">Authentication & RBAC</span>
+            <span class="skill-tag tier-3">WhatsApp Integration</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🌐</span>
+            <h3 data-i18n="skills_practices">Practices & Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Agile / Scrum</span>
+            <span class="skill-tag tier-1">Technical Documentation</span>
+            <span class="skill-tag tier-2">End-to-End Testing</span>
+            <span class="skill-tag tier-2">Software Architecture</span>
+            <span class="skill-tag tier-3">French — Native</span>
+            <span class="skill-tag tier-3">Haitian Creole — Native</span>
+            <span class="skill-tag tier-3">Portuguese — Fluent</span>
+            <span class="skill-tag tier-3">English — Proficient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="projects_tag">What I've Built</span>
+        <h2 class="section-title" data-i18n="projects_title">Featured Projects</h2>
+        <p class="section-subtitle" data-i18n="projects_subtitle">Real systems, real impact — from research prototypes to production-grade deployments.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: RAG System -->
+        <div class="project-card project-featured">
+          <div class="project-header">
+            <div class="project-icon">🧬</div>
+            <div class="project-meta">
+              <div class="project-badges">
+                <span class="project-badge badge-featured" data-i18n="badge_featured">Featured</span>
+                <span class="project-badge badge-ai">Generative AI</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title" data-i18n="proj1_title">Institutional RAG Knowledge System</h3>
+          <p class="project-desc" data-i18n="proj1_desc">
+            A production-grade Retrieval-Augmented Generation platform built for UFFS. The system ingests, versions, and audits documents (PDF, DOCX, TXT), processes them through a full NLP pipeline (chunking, normalization, embeddings), and enables contextual Q&A powered by Google Gemini — with source citations and role-based access control.
+          </p>
+          <div class="project-impact">
+            <span class="impact-icon">📈</span>
+            <span data-i18n="proj1_impact">Enabled institutional staff to query 1,000+ documents with cited, accurate responses — reducing information retrieval time significantly.</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Google Gemini</span>
+            <span class="tech-tag">ChromaDB</span>
+            <span class="tech-tag">MongoDB Atlas</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">TailwindCSS</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+        </div>
+
+        <!-- Project 2: WhatsApp AI Bot -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">💬</div>
+            <div class="project-meta">
+              <div class="project-badges">
+                <span class="project-badge badge-ai">AI Automation</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title" data-i18n="proj2_title">Intelligent WhatsApp Customer Service Bot</h3>
+          <p class="project-desc" data-i18n="proj2_desc">
+            Designed and implemented an AI-powered customer service system via WhatsApp, featuring conversational flows, interactive menus, and real-time database queries. The bot applies NLP to understand user intent and delivers contextual, dynamic responses — replacing manual support workflows.
+          </p>
+          <div class="project-impact">
+            <span class="impact-icon">⚡</span>
+            <span data-i18n="proj2_impact">Automated end-to-end customer support flows, reducing response time and operational overhead for the institution.</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">WhatsApp API</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">AI/NLP</span>
+          </div>
+          <div class="project-collab">
+            <span class="collab-label">Partnership:</span> UNOESC · Softex · MCTI
+          </div>
+        </div>
+
+        <!-- Project 3: LLM Corporate Solutions -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🏢</div>
+            <div class="project-meta">
+              <div class="project-badges">
+                <span class="project-badge badge-corp">Corporate</span>
+                <span class="project-badge badge-ai">LLM</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title" data-i18n="proj3_title">Enterprise LLM Integration Platform</h3>
+          <p class="project-desc" data-i18n="proj3_desc">
+            At Compass UOL, contributed to the development of enterprise-grade intelligent solutions powered by Large Language Models. Work involved architecting LLM-based pipelines, building automation workflows, and collaborating with multidisciplinary teams on time-sensitive delivery cycles.
+          </p>
+          <div class="project-impact">
+            <span class="impact-icon">🎯</span>
+            <span data-i18n="proj3_impact">Delivered scalable AI automation solutions to corporate clients, integrating cutting-edge LLM capabilities into production environments.</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">LLMs</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Project 4: AWS ML -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">☁️</div>
+            <div class="project-meta">
+              <div class="project-badges">
+                <span class="project-badge badge-corp">AWS</span>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title" data-i18n="proj4_title">AWS AI Services Exploration & Prototyping</h3>
+          <p class="project-desc" data-i18n="proj4_desc">
+            Hands-on exploration and integration of the AWS AI ecosystem — including SageMaker for model training, Comprehend for NLP, Kendra for intelligent search, Lex for conversational interfaces, Rekognition for computer vision, Transcribe for speech-to-text, and Bedrock for foundation model access.
+          </p>
+          <div class="project-impact">
+            <span class="impact-icon">🔬</span>
+            <span data-i18n="proj4_impact">Built a strong applied foundation in cloud-native AI, enabling rapid prototyping and deployment of ML-powered features.</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Amazon SageMaker</span>
+            <span class="tech-tag">Amazon Bedrock</span>
+            <span class="tech-tag">Amazon Lex</span>
+            <span class="tech-tag">Rekognition</span>
+            <span class="tech-tag">Comprehend</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+  ============================================================ -->
+  <section id="experience" class="section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="exp_tag">Career Path</span>
+        <h2 class="section-title" data-i18n="exp_title">Experience</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Compass UOL - Current -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role" data-i18n="exp1_role">Software Engineer — Programmer I</h3>
+                <div class="tc-company">Compass UOL</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-badge tc-current" data-i18n="exp_current">Current</span>
+                <span class="tc-date">Jan 2024 — <span data-i18n="exp_present">Present</span></span>
+              </div>
+            </div>
+            <p class="tc-desc" data-i18n="exp1_desc">
+              Working on corporate AI products with a focus on Generative AI and LLM-based automation. Embedded in agile, cross-functional teams delivering intelligent solutions for enterprise clients. Responsible for architecting and implementing AI-powered pipelines that integrate seamlessly into production systems.
+            </p>
+            <div class="tc-highlights">
+              <div class="tc-highlight" data-i18n="exp1_h1">Develops LLM-based intelligent automation for corporate environments</div>
+              <div class="tc-highlight" data-i18n="exp1_h2">Architects and ships Generative AI features end-to-end</div>
+              <div class="tc-highlight" data-i18n="exp1_h3">Collaborates in agile teams with multidisciplinary engineering backgrounds</div>
+            </div>
+            <div class="tc-tech">
+              <span>Python</span><span>LLMs</span><span>AWS</span><span>TypeScript</span><span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UFFS Extension Project -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role" data-i18n="exp2_role">AI Research & Development Fellow</h3>
+                <div class="tc-company">UFFS – Federal University of Fronteira Sul</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-date">Sep 2024 — Dec 2025</span>
+              </div>
+            </div>
+            <p class="tc-desc" data-i18n="exp2_desc">
+              Led the technical development of an institutional Generative AI system as part of the "Professional Development and IT Innovation" extension program (1,280 hours). Built a complete RAG platform from scratch — covering ingestion pipelines, vector search, LLM integration, and a fully functional React frontend with authentication and role management.
+            </p>
+            <div class="tc-highlights">
+              <div class="tc-highlight" data-i18n="exp2_h1">Built a full-stack RAG system: ingestion → embeddings → vector search → LLM → citations</div>
+              <div class="tc-highlight" data-i18n="exp2_h2">Integrated WhatsApp chatbot with direct institutional database queries</div>
+              <div class="tc-highlight" data-i18n="exp2_h3">Implemented auth, RBAC, session management, and end-to-end tests</div>
+              <div class="tc-highlight" data-i18n="exp2_h4">Planned open-source model migration via Hugging Face / SentenceTransformers</div>
+            </div>
+            <div class="tc-tech">
+              <span>Python</span><span>Google Gemini</span><span>ChromaDB</span><span>MongoDB</span><span>React</span><span>TypeScript</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRISA -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role" data-i18n="exp3_role">ICT Residency Program — AI Systems Developer</h3>
+                <div class="tc-company">BRISA – IT Society for Development</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-date">Feb 2024 — Aug 2024</span>
+              </div>
+            </div>
+            <p class="tc-desc" data-i18n="exp3_desc">
+              Selected for the Advanced Computing Residency (540 hours), where I designed and built an Intelligent Communication Management System via WhatsApp. This national program, backed by UNOESC, Softex, and the Brazilian Ministry of Science and Technology, focused on applying AI to real institutional challenges.
+            </p>
+            <div class="tc-highlights">
+              <div class="tc-highlight" data-i18n="exp3_h1">Developed automated WhatsApp service flows with conversational AI</div>
+              <div class="tc-highlight" data-i18n="exp3_h2">Implemented real-time database queries for dynamic response generation</div>
+              <div class="tc-highlight" data-i18n="exp3_h3">Delivered the complete project with documentation and final presentation</div>
+            </div>
+            <div class="tc-tech">
+              <span>Python</span><span>SQL</span><span>WhatsApp API</span><span>NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compass UOL Intern -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role" data-i18n="exp4_role">Technology Intern — AWS & Machine Learning</h3>
+                <div class="tc-company">Compass UOL</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-date">Jun 2023 — Nov 2023</span>
+              </div>
+            </div>
+            <p class="tc-desc" data-i18n="exp4_desc">
+              Immersive internship focused on AWS cloud services and Machine Learning. Gained hands-on experience across the AWS AI ecosystem — including SageMaker, Comprehend, Kendra, Lex, Polly, and Rekognition — while working within an agile corporate environment.
+            </p>
+            <div class="tc-tech">
+              <span>AWS SageMaker</span><span>Comprehend</span><span>Kendra</span><span>Lex</span><span>Polly</span><span>Rekognition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Monitor -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role" data-i18n="exp5_role">Teaching Assistant — Algorithms & Data Structures</h3>
+                <div class="tc-company">UFFS – Federal University of Fronteira Sul</div>
+              </div>
+              <div class="tc-period">
+                <span class="tc-date">Mar 2023 — Jul 2024</span>
+              </div>
+            </div>
+            <p class="tc-desc" data-i18n="exp5_desc">
+              Supported students through individual and group tutoring sessions in Algorithms and Data Structures. Reviewed and contributed to didactic materials, reinforcing foundational computer science concepts in Python and C.
+            </p>
+            <div class="tc-tech">
+              <span>Python</span><span>C</span><span>Data Structures</span><span>Teaching</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education Mini Cards -->
+      <div class="education-block">
+        <h3 class="edu-heading" data-i18n="edu_heading">Education</h3>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h4 data-i18n="edu1_degree">Professional Master's in Applied Computing</h4>
+              <p class="edu-institution">UTFPR — Universidade Tecnológica Federal do Paraná</p>
+              <span class="edu-status status-ongoing" data-i18n="edu_ongoing">In Progress</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h4 data-i18n="edu2_degree">Bachelor's in Computer Science</h4>
+              <p class="edu-institution">UFFS — Universidade Federal da Fronteira Sul</p>
+              <span class="edu-status status-done" data-i18n="edu_completed">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+  ============================================================ -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="certs_tag">Credentials</span>
+        <h2 class="section-title" data-i18n="certs_title">Certifications & Highlights</h2>
+        <p class="section-subtitle" data-i18n="certs_subtitle">Continuous learning is core to how I grow — from formal programs to hands-on specializations.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card cert-highlight">
+          <div class="cert-icon">🤖</div>
+          <h4 data-i18n="cert1">AI-Assisted Certified Professional</h4>
+          <span class="cert-issuer">Compass UOL</span>
+        </div>
+        <div class="cert-card cert-highlight">
+          <div class="cert-icon">🔒</div>
+          <h4 data-i18n="cert2">IT Security Specialist</h4>
+          <span class="cert-issuer">Udemy</span>
+        </div>
+        <div class="cert-card cert-highlight">
+          <div class="cert-icon">🏛️</div>
+          <h4 data-i18n="cert3">ICT Residency Program</h4>
+          <span class="cert-issuer">BRISA / Softex / MCTI</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">☁️</div>
+          <h4 data-i18n="cert4">Machine Learning with AWS & SageMaker</h4>
+          <span class="cert-issuer">IA Expert Academy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🧠</div>
+          <h4 data-i18n="cert5">Artificial Neural Networks in Python</h4>
+          <span class="cert-issuer">IA Expert Academy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">☁️</div>
+          <h4 data-i18n="cert6">AWS Development with Serverless Focus</h4>
+          <span class="cert-issuer">Udemy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🐍</div>
+          <h4 data-i18n="cert7">Python Zero to Advanced + Projects</h4>
+          <span class="cert-issuer">Udemy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🏗️</div>
+          <h4 data-i18n="cert8">Terraform — Basic to Advanced</h4>
+          <span class="cert-issuer">Udemy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <h4 data-i18n="cert9">Alexa Skill Builder</h4>
+          <span class="cert-issuer">Udemy</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <h4 data-i18n="cert10">LatinOware — Latin American Free Software Congress</h4>
+          <span class="cert-issuer">20th Edition</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🎓</div>
+          <h4 data-i18n="cert11">IX Academic Week in Computer Science</h4>
+          <span class="cert-issuer">UFFS</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">💡</div>
+          <h4 data-i18n="cert12">Logic Programming & Computational Thinking</h4>
+          <span class="cert-issuer">SENAI</span>
+        </div>
+      </div>
+
+      <!-- UN Highlight Banner -->
+      <div class="un-highlight">
+        <img src="imagens/IMG1_web.jpg" alt="Angemydelson at UN event" class="un-highlight-img" loading="lazy" />
+        <div class="un-highlight-content">
+          <span class="un-tag">🇺🇳 International Recognition</span>
+          <h3 data-i18n="un_title">Represented at the United Nations</h3>
+          <p data-i18n="un_desc">
+            Had the opportunity to participate in an innovation event at the United Nations — a milestone that reflects my commitment to leveraging technology for global impact and contributing to international conversations around AI and sustainable development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="contact_tag">Let's Connect</span>
+        <h2 class="section-title" data-i18n="contact_title">Get in Touch</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">I'm open to new opportunities, research collaborations, and interesting conversations about AI and software engineering.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="cc-icon">📧</div>
+            <div class="cc-body">
+              <h4 data-i18n="contact_email_label">Email</h4>
+              <a href="mailto:delsonysuperdel@gmail.com">delsonysuperdel@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">💼</div>
+            <div class="cc-body">
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/angemydelson-saint-bert-900b4b29b" target="_blank" rel="noopener">angemydelson-saint-bert</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">📍</div>
+            <div class="cc-body">
+              <h4 data-i18n="contact_location_label">Location</h4>
+              <span>Chapecó – SC, Brasil</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">🌍</div>
+            <div class="cc-body">
+              <h4 data-i18n="contact_languages_label">Languages</h4>
+              <span data-i18n="contact_languages_val">French · Haitian Creole · Portuguese · English</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="formName" data-i18n="form_name">Name</label>
+              <input type="text" id="formName" name="name" required autocomplete="name" data-i18n-placeholder="form_name_placeholder" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="formEmail" data-i18n="form_email">Email</label>
+              <input type="email" id="formEmail" name="email" required autocomplete="email" data-i18n-placeholder="form_email_placeholder" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="formMessage" data-i18n="form_message">Message</label>
+              <textarea id="formMessage" name="message" rows="5" required data-i18n-placeholder="form_message_placeholder" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form_send">Send Message</button>
+            <p class="form-note" data-i18n="form_note">I usually respond within 24–48 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>ASB<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy" data-i18n="footer_copy">Built with passion and precision. Open to opportunities worldwide.</p>
+      <div class="footer-links">
+        <a href="mailto:delsonysuperdel@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/angemydelson-saint-bert-900b4b29b" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </a>
+      </div>
+      <p class="footer-bottom">© 2025 Angemydelson Saint-Bert. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
