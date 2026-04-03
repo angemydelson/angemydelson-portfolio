@@ -11,6 +11,148 @@ const translations = {
     hero_description:
       "Software Engineer specializing in Generative AI and Machine Learning systems. I build intelligent, real-world solutions using LLMs, RAG architectures, and modern cloud infrastructure — bridging research and production.",
     hero_cta_projects: "View Projects",
+    hero_cta_contact: "Get in Touch",
+    stat_years: "Years in Tech",
+    stat_projects: "AI Projects",
+    stat_certs: "Certifications",
+    hero_un_badge: "UN Event",
+
+    about_tag: "Who I Am",
+    about_title: "Crafting Intelligent Solutions",
+    about_img_caption: "UN Innovation Event",
+    about_lead:
+      "I'm a Software Engineer from Curitiba, Brazil, with a deep focus on Artificial Intelligence and the practical application of Machine Learning at scale.",
+    about_para1:
+      "My journey started with a passion for algorithms and grew into a specialization in Generative AI — building systems that understand language, retrieve knowledge intelligently, and respond with context and precision.",
+    about_para2:
+      "Currently enrolled in a Professional Master's in Applied Computing at UTFPR, I work at the intersection of academic research and industry engineering. My experience spans from developing LLM pipelines and RAG architectures to deploying production-ready systems on AWS — always with a focus on measurable impact.",
+    about_para3:
+      "I'm multilingual (French native, Portuguese fluent, English proficient) and am drawn to international, cross-cultural teams that solve real-world problems through technology.",
+
+    skills_tag: "Tech Stack",
+    skills_title: "Skills & Technologies",
+    skills_subtitle:
+      "A curated overview of the tools and technologies I use to build intelligent systems.",
+    skills_ai: "AI & Machine Learning",
+    skills_lang: "Languages & Frameworks",
+    skills_cloud: "Cloud & DevOps",
+    skills_backend: "Backend & Data",
+    skills_practices: "Practices & Languages",
+
+    projects_tag: "What I've Built",
+    projects_title: "Featured Projects",
+    projects_subtitle:
+      "Real systems, real impact — from research prototypes to production-grade deployments.",
+    badge_featured: "Featured",
+    proj1_title: "Institutional RAG Knowledge System",
+    proj1_desc:
+      "A production-grade Retrieval-Augmented Generation platform built for UFFS. The system ingests, versions, and audits documents (PDF, DOCX, TXT), processes them through a full NLP pipeline (chunking, normalization, embeddings), and enables contextual Q&A powered by Google Gemini — with source citations and role-based access control.",
+    proj1_impact:
+      "Enabled institutional staff to query 1,000+ documents with cited, accurate responses — reducing information retrieval time significantly.",
+    proj2_title: "Intelligent WhatsApp Customer Service Bot",
+    proj2_desc:
+      "Designed and implemented an AI-powered customer service system via WhatsApp, featuring conversational flows, interactive menus, and real-time database queries. The bot applies NLP to understand user intent and delivers contextual, dynamic responses — replacing manual support workflows.",
+    proj2_impact:
+      "Automated end-to-end customer support flows, reducing response time and operational overhead for the institution.",
+    proj3_title: "Enterprise LLM Integration Platform",
+    proj3_desc:
+      "At Compass UOL, contributed to the development of enterprise-grade intelligent solutions powered by Large Language Models. Work involved architecting LLM-based pipelines, building automation workflows, and collaborating with multidisciplinary teams on time-sensitive delivery cycles.",
+    proj3_impact:
+      "Delivered scalable AI automation solutions to corporate clients, integrating cutting-edge LLM capabilities into production environments.",
+    proj4_title: "AWS AI Services Exploration & Prototyping",
+    proj4_desc:
+      "Hands-on exploration and integration of the AWS AI ecosystem — including SageMaker for model training, Comprehend for NLP, Kendra for intelligent search, Lex for conversational interfaces, Rekognition for computer vision, Transcribe for speech-to-text, and Bedrock for foundation model access.",
+    proj4_impact:
+      "Built a strong applied foundation in cloud-native AI, enabling rapid prototyping and deployment of ML-powered features.",
+
+    exp_tag: "Career Path",
+    exp_title: "Experience",
+    exp_current: "Current",
+    exp_present: "Present",
+    exp1_role: "Software Engineer — Programmer I",
+    exp1_desc:
+      "Working on corporate AI products with a focus on Generative AI and LLM-based automation. Embedded in agile, cross-functional teams delivering intelligent solutions for enterprise clients. Responsible for architecting and implementing AI-powered pipelines that integrate seamlessly into production systems.",
+    exp1_h1: "Develops LLM-based intelligent automation for corporate environments",
+    exp1_h2: "Architects and ships Generative AI features end-to-end",
+    exp1_h3: "Collaborates in agile teams with multidisciplinary engineering backgrounds",
+    exp2_role: "AI Research & Development Fellow",
+    exp2_desc:
+      "Led the technical development of an institutional Generative AI system as part of the \"Professional Development and IT Innovation\" extension program (1,280 hours). Built a complete RAG platform from scratch — covering ingestion pipelines, vector search, LLM integration, and a fully functional React frontend with authentication and role management.",
+    exp2_h1: "Built a full-stack RAG system: ingestion → embeddings → vector search → LLM → citations",
+    exp2_h2: "Integrated WhatsApp chatbot with direct institutional database queries",
+    exp2_h3: "Implemented auth, RBAC, session management, and end-to-end tests",
+    exp2_h4: "Planned open-source model migration via Hugging Face / SentenceTransformers",
+    exp3_role: "ICT Residency Program — AI Systems Developer",
+    exp3_desc:
+      "Selected for the Advanced Computing Residency (540 hours), where I designed and built an Intelligent Communication Management System via WhatsApp. This national program, backed by UNOESC, Softex, and the Brazilian Ministry of Science and Technology, focused on applying AI to real institutional challenges.",
+    exp3_h1: "Developed automated WhatsApp service flows with conversational AI",
+    exp3_h2: "Implemented real-time database queries for dynamic response generation",
+    exp3_h3: "Delivered the complete project with documentation and final presentation",
+    exp4_role: "Technology Intern — AWS & Machine Learning",
+    exp4_desc:
+      "Immersive internship focused on AWS cloud services and Machine Learning. Gained hands-on experience across the AWS AI ecosystem — including SageMaker, Comprehend, Kendra, Lex, Polly, and Rekognition — while working within an agile corporate environment.",
+    exp5_role: "Teaching Assistant — Algorithms & Data Structures",
+    exp5_desc:
+      "Supported students through individual and group tutoring sessions in Algorithms and Data Structures. Reviewed and contributed to didactic materials, reinforcing foundational computer science concepts in Python and C.",
+
+    edu_heading: "Education",
+    edu1_degree: "Professional Master's in Applied Computing",
+    edu2_degree: "Bachelor's in Computer Science",
+    edu_ongoing: "In Progress",
+    edu_completed: "Completed",
+
+    certs_tag: "Credentials",
+    certs_title: "Certifications & Highlights",
+    certs_subtitle:
+      "Continuous learning is core to how I grow — from formal programs to hands-on specializations.",
+    cert1: "AI-Assisted Certified Professional",
+    cert2: "IT Security Specialist",
+    cert3: "ICT Residency Program",
+    cert4: "Machine Learning with AWS & SageMaker",
+    cert5: "Artificial Neural Networks in Python",
+    cert6: "AWS Development with Serverless Focus",
+    cert7: "Python Zero to Advanced + Projects",
+    cert8: "Terraform — Basic to Advanced",
+    cert9: "Alexa Skill Builder",
+    cert10: "LatinOware — Latin American Free Software Congress",
+    cert11: "IX Academic Week in Computer Science",
+    cert12: "Logic Programming & Computational Thinking",
+    un_title: "Represented at the United Nations",
+    un_desc:
+      "Had the opportunity to participate in an innovation event at the United Nations — a milestone that reflects my commitment to leveraging technology for global impact and contributing to international conversations around AI and sustainable development.",
+
+    contact_tag: "Let's Connect",
+    contact_title: "Get in Touch",
+    contact_subtitle:
+      "I'm open to new opportunities, research collaborations, and interesting conversations about AI and software engineering.",
+    contact_email_label: "Email",
+    contact_location_label: "Location",
+    contact_languages_label: "Languages",
+    contact_languages_val: "French · Portuguese · English",
+    form_name: "Name",
+    form_name_placeholder: "Your name",
+    form_email: "Email",
+    form_email_placeholder: "your@email.com",
+    form_message: "Message",
+    form_message_placeholder: "Tell me about your project or opportunity...",
+    form_send: "Send Message",
+    form_note: "I usually respond within 24–48 hours.",
+
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Send me a message on WhatsApp",
+    contact_whatsapp_sub: "Click below to start a conversation directly on WhatsApp Web.",
+    contact_whatsapp_btn: "Open WhatsApp",
+
+    footer_copy: "Built with passion and precision. Open to opportunities worldwide.",
+    footer_rights: "All rights reserved.",
+  },
+
+  pt: {
+    nav_about: "Sobre",
+    nav_skills: "Habilidades",
+    nav_projects: "Projetos",
+    nav_experience: "Experiência",
+    nav_certifications: "Certificações",
     nav_contact: "Contato",
 
     hero_badge: "Aberto a oportunidades",
@@ -33,7 +175,7 @@ const translations = {
     about_para2:
       "Atualmente cursando Mestrado Profissional em Computação Aplicada na UTFPR, atuo na interseção entre pesquisa acadêmica e engenharia da indústria. Minha experiência vai desde o desenvolvimento de pipelines LLM e arquiteturas RAG até a implantação de sistemas prontos para produção na AWS — sempre com foco em impacto mensurável.",
     about_para3:
-      "Sou multilíngue (francês e crioulo haitiano nativos, português fluente, inglês intermediário) e me identifico com equipes internacionais e multiculturais que resolvem problemas reais com tecnologia.",
+      "Sou multilíngue (francês nativo, português fluente, inglês avançado) e me identifico com equipes internacionais e multiculturais que resolvem problemas reais com tecnologia.",
 
     skills_tag: "Stack Técnica",
     skills_title: "Habilidades & Tecnologias",
@@ -134,7 +276,7 @@ const translations = {
     contact_email_label: "E-mail",
     contact_location_label: "Localização",
     contact_languages_label: "Idiomas",
-    contact_languages_val: "Francês · Crioulo Haitiano · Português · Inglês",
+    contact_languages_val: "Francês · Português · Inglês",
     form_name: "Nome",
     form_name_placeholder: "Seu nome",
     form_email: "E-mail",
@@ -181,7 +323,7 @@ const translations = {
     about_para2:
       "Actuellement en Master Professionnel en Informatique Appliquée à l'UTFPR, je travaille à l'intersection de la recherche académique et de l'ingénierie industrielle. Mon expérience va du développement de pipelines LLM et d'architectures RAG au déploiement de systèmes en production sur AWS.",
     about_para3:
-      "Je suis multilingue (français et créole haïtien natifs, portugais courant, anglais intermédiaire) et je suis attiré par des équipes internationales et interculturelles qui résolvent des problèmes réels grâce à la technologie.",
+      "Je suis multilingue (français natif, portugais courant, anglais avancé) et je suis attiré par des équipes internationales et interculturelles qui résolvent des problèmes réels grâce à la technologie.",
 
     skills_tag: "Stack technique",
     skills_title: "Compétences & technologies",
@@ -282,7 +424,7 @@ const translations = {
     contact_email_label: "E-mail",
     contact_location_label: "Localisation",
     contact_languages_label: "Langues",
-    contact_languages_val: "Français · Créole haïtien · Portugais · Anglais",
+    contact_languages_val: "Français · Portugais · Anglais",
     form_name: "Nom",
     form_name_placeholder: "Votre nom",
     form_email: "E-mail",
@@ -329,7 +471,7 @@ const translations = {
     about_para2:
       "Actualmente cursando una Maestría Profesional en Computación Aplicada en la UTFPR, trabajo en la intersección de la investigación académica y la ingeniería industrial. Mi experiencia abarca desde el desarrollo de pipelines LLM y arquitecturas RAG hasta el despliegue de sistemas listos para producción en AWS.",
     about_para3:
-      "Soy multilingüe (francés y creole haitiano nativos, portugués fluido, inglés intermedio) y me atrae trabajar en equipos internacionales y multiculturales que resuelven problemas reales mediante la tecnología.",
+      "Soy multilingüe (francés nativo, portugués fluido, inglés avanzado) y me atrae trabajar en equipos internacionales y multiculturales que resuelven problemas reales mediante la tecnología.",
 
     skills_tag: "Stack tecnológico",
     skills_title: "Habilidades & tecnologías",
@@ -430,7 +572,7 @@ const translations = {
     contact_email_label: "Correo electrónico",
     contact_location_label: "Ubicación",
     contact_languages_label: "Idiomas",
-    contact_languages_val: "Francés · Criollo haitiano · Portugués · Inglés",
+    contact_languages_val: "Francés · Portugués · Inglés",
     form_name: "Nombre",
     form_name_placeholder: "Tu nombre",
     form_email: "Correo electrónico",
@@ -447,153 +589,5 @@ const translations = {
 
     footer_copy: "Construido con pasión y precisión. Abierto a oportunidades en todo el mundo.",
     footer_rights: "Todos los derechos reservados.",
-  },
-
-  ht: {
-    nav_about: "Sou mwen",
-    nav_skills: "Kapasite",
-    nav_projects: "Pwojè",
-    nav_experience: "Eksperyans",
-    nav_certifications: "Sètifikasyon",
-    nav_contact: "Kontakte",
-
-    hero_badge: "Disponib pou opòtinite",
-    hero_description:
-      "Enjenyè lojisyèl ki espesyalize nan IA Generatif ak sistèm Machine Learning. Mwen bati solisyon entèlijan ak LLMs, achitekti RAG ak enfrastriktirè cloud modèn — konnekte rechèch ak pwoduksyon.",
-    hero_cta_projects: "Wè Pwojè",
-    hero_cta_contact: "Kontakte mwen",
-    stat_years: "Ane nan Tech",
-    stat_projects: "Pwojè IA",
-    stat_certs: "Sètifikasyon",
-    hero_un_badge: "Evènman ONU",
-
-    about_tag: "Ki moun mwen ye",
-    about_title: "Kreye Solisyon Entèlijan",
-    about_img_caption: "Evènman Inovasyon — ONU",
-    about_lead:
-      "Mwen se yon Enjenyè Lojisyèl ki soti Curitiba, Brezil, ak yon gwo enterè nan Entèlijans Atifisyèl ak aplikasyon pratik Machine Learning nan echèl.",
-    about_para1:
-      "Vwayaj mwen te kòmanse ak yon pasyon pou algoritm epi vin yon espesyalizasyon nan IA Generatif — bati sistèm ki konprann lang, rekipere konesans yon fason entèlijan epi reponn ak kontèks ak presizyon.",
-    about_para2:
-      "Kounye a ap fè Mèt Pwofesyonèl nan Enfòmatik Aplike nan UTFPR, mwen travay nan entèseksyon rechèch akademik ak enjenyeri endistriyèl. Eksperyans mwen kouvri devlopman pipelines LLM ak achitekti RAG jiska deplwaman sistèm sou AWS.",
-    about_para3:
-      "Mwen pale plizyè lang (fransè ak kreyòl ayisyen se lang natif natal mwen, pòtigè koule, angle entèmedyè) epi mwen atire pa ekip entènasyonal ki rezoud pwoblèm reyèl ak teknoloji.",
-
-    skills_tag: "Stack Teknik",
-    skills_title: "Kapasite & Teknoloji",
-    skills_subtitle:
-      "Yon apèsi sou zouti ak teknoloji mwen itilize pou bati sistèm entèlijan.",
-    skills_ai: "IA & Machine Learning",
-    skills_lang: "Lang & Frameworks",
-    skills_cloud: "Cloud & DevOps",
-    skills_backend: "Backend & Done",
-    skills_practices: "Pratik & Lang pale",
-
-    projects_tag: "Sa mwen bati",
-    projects_title: "Pwojè Prensipal",
-    projects_subtitle:
-      "Sistèm reyèl, enpak reyèl — soti nan pwototip rechèch jouk deplwaman nivo pwoduksyon.",
-    badge_featured: "Vedèt",
-    proj1_title: "Sistèm RAG Konesans Enstitisyonèl",
-    proj1_desc:
-      "Yon platfòm RAG nivo pwoduksyon bati pou UFFS. Sistèm nan injere, vèsyone epi verifye dokiman (PDF, DOCX, TXT), trete yo atravè yon pipeline NLP konplè (chunking, nòmalizasyon, embeddings) epi pèmèt Q&R kontèkstyèl ak Google Gemini — ak sitasyon sous ak kontwòl aksè bazé sou wòl.",
-    proj1_impact:
-      "Pèmèt pèsonèl enstitisyonèl yo entèwoje plis pase 1.000 dokiman ak repons presiz ak site — redwi konsiderableman tan rekiperasyon enfòmasyon.",
-    proj2_title: "Bot Entèlijan Sèvis Kliyan WhatsApp",
-    proj2_desc:
-      "Konsepe ak enplemante yon sistèm sèvis kliyan alimenté pa IA via WhatsApp, ak flou konvèsasyonèl, meni entèraktif ak rechèch baz done an tan reyèl. Bot la aplike NLP pou konprann entansyon itilizatè.",
-    proj2_impact:
-      "Otomatize flou sipò kliyan konplè, redwi tan repons ak chaj operasyonèl.",
-    proj3_title: "Platfòm Korporatif Entegrasyon LLM",
-    proj3_desc:
-      "Nan Compass UOL, mwen kontribiye nan devlopman solisyon entèlijan nivo antrepriz alimenté pa Large Language Models — achitekti pipelines LLM, workflow otomatizasyon ak kolaborasyon ak ekip miltidisiplinè.",
-    proj3_impact:
-      "Livré solisyon otomatizasyon IA ekalad pou kliyan korporatif, entegre kapasite LLM pwent nan anviwonman pwoduksyon.",
-    proj4_title: "Eksplorasyon & Prototipaj Sèvis AWS AI",
-    proj4_desc:
-      "Eksplorasyon pratik ak entegrasyon ekosistèm AWS AI — enkli SageMaker pou antrenman modèl, Comprehend pou NLP, Kendra pou rechèch entèlijan, Lex pou entèfas konvèsasyonèl, Rekognition pou vizyon òdinatè ak Bedrock pou aksè modèl fondasyonèl.",
-    proj4_impact:
-      "Bati yon baz solid pratik nan IA natif natal nan cloud, pèmèt prototipaj rapid ak deplwaman karakteristik ML.",
-
-    exp_tag: "Parcours",
-    exp_title: "Eksperyans",
-    exp_current: "Kounye a",
-    exp_present: "Jodi a",
-    exp1_role: "Enjenyè Lojisyèl — Pwogramè I",
-    exp1_desc:
-      "Travay sou pwodwi IA korporatif ak aksan sou IA Generatif ak otomatizasyon LLM. Entegre nan ekip ajil ak miltidisiplinè ki livré solisyon entèlijan pou kliyan antrepriz.",
-    exp1_h1: "Devlope otomatizasyon entèlijan bazé sou LLMs pou anviwonman korporatif",
-    exp1_h2: "Achitekte ak livré fonksyonalite IA Generatif de pwen an pwen",
-    exp1_h3: "Kolabore nan ekip ajil ak pwofil enjenyeri miltidisiplinè",
-    exp2_role: "Cherchè & Devlopè an IA",
-    exp2_desc:
-      "Te dirije devlopman teknik yon sistèm IA Generatif enstitisyonèl (1.280 è). Bati yon platfòm RAG konplè soti nan zewo.",
-    exp2_h1: "Bati yon sistèm RAG konplè: injeksyon → embeddings → rechèch vektoryèl → LLM → sitasyon",
-    exp2_h2: "Entegre chatbot WhatsApp ak rechèch dirèk nan baz done enstitisyonèl",
-    exp2_h3: "Enplemante otantifikasyon, RBAC, jesyon sesyon ak tès end-to-end",
-    exp2_h4: "Planifye migrasyon pou modèl open source via Hugging Face / SentenceTransformers",
-    exp3_role: "Pwogram Rezidans TIC — Devlopè Sistèm IA",
-    exp3_desc:
-      "Yo te chwazi mwen pou Rezidans Enfòmatik Avanse (540 è), kote mwen te konsepe ak bati yon Sistèm Entèlijan Jesyon Kominikasyon via WhatsApp. Pwogram nasyonal sipòte pa UNOESC, Softex ak MCTI Brezilyen.",
-    exp3_h1: "Devlope flou sèvis WhatsApp otomatize ak IA konvèsasyonèl",
-    exp3_h2: "Enplemante rechèch baz done an tan reyèl pou repons dinamik",
-    exp3_h3: "Livré pwojè konplè ak dokimantasyon ak prezantasyon final",
-    exp4_role: "Estajyè Teknoloji — AWS & Machine Learning",
-    exp4_desc:
-      "Estaj imèsif nan sèvis cloud AWS ak Machine Learning. Eksperyans pratik nan ekosistèm AWS AI — SageMaker, Comprehend, Kendra, Lex, Polly ak Rekognition — nan anviwonman korporatif ajil.",
-    exp5_role: "Asistan Pedagojik — Algoritm & Estrikti Done",
-    exp5_desc:
-      "Te sipòte etidyan atravè sesyon titorya endividyèl ak gwoup nan Algoritm ak Estrikti Done. Kontribiye nan materyèl didaktik an Python ak C.",
-
-    edu_heading: "Fòmasyon Akademik",
-    edu1_degree: "Mèt Pwofesyonèl nan Enfòmatik Aplike",
-    edu2_degree: "Lisans nan Syans Enfòmatik",
-    edu_ongoing: "An Kou",
-    edu_completed: "Fin",
-
-    certs_tag: "Kalifikasyon",
-    certs_title: "Sètifikasyon & Reyalizasyon",
-    certs_subtitle:
-      "Aprann kontinyèl se fondamantal pou kwasans mwen — soti nan pwogram fòmèl jiska espesyalizasyon pratik.",
-    cert1: "Pwofesyonèl Sètifye Asiste pa IA",
-    cert2: "Espesyalis Sekirite Enfòmatik",
-    cert3: "Pwogram Rezidans TIC",
-    cert4: "Machine Learning ak AWS & SageMaker",
-    cert5: "Rezo Neral Atifisyèl an Python",
-    cert6: "Devlopman AWS Serverless",
-    cert7: "Python Zewo a Avanse + Pwojè",
-    cert8: "Terraform — Debaz a Avanse",
-    cert9: "Alexa Skill Builder",
-    cert10: "LatinOware — Kongrè Amerik Latin Lojisyèl Lib",
-    cert11: "IX Semèn Akademik Syans Enfòmatik",
-    cert12: "Lojik Pwogramasyon & Pensé Konpitatif",
-    un_title: "Reprezante nan Nasyon Zini",
-    un_desc:
-      "Mwen te gen opòtinite pou patisipe nan yon evènman inovasyon nan Nasyon Zini — yon etap enpòtan ki reflete angajman mwen nan itilize teknoloji pou enpak mondyal ak kontribye nan konvèsasyon entènasyonal sou IA ak devlopman dirab.",
-
-    contact_tag: "Ann Konekte",
-    contact_title: "Kontakte Mwen",
-    contact_subtitle:
-      "Mwen ouvè pou nouvo opòtinite, kolaborasyon rechèch ak konvèsasyon enteresan sou IA ak enjenyeri lojisyèl.",
-    contact_email_label: "Imèl",
-    contact_location_label: "Kote",
-    contact_languages_label: "Lang",
-    contact_languages_val: "Fransè · Kreyòl Ayisyen · Pòtigè · Anglè",
-    form_name: "Non",
-    form_name_placeholder: "Non ou",
-    form_email: "Imèl",
-    form_email_placeholder: "ou@imèl.com",
-    form_message: "Mesaj",
-    form_message_placeholder: "Di mwen sou pwojè ou oswa opòtinite ou...",
-    form_send: "Voye Mesaj",
-    form_note: "Mwen reponn anjeneral nan 24–48 è.",
-
-    contact_whatsapp_label: "WhatsApp",
-    contact_whatsapp_cta: "Voye mwen yon mesaj sou WhatsApp",
-    contact_whatsapp_sub: "Klike anba a pou kòmanse yon konvèsasyon dirèkteman sou WhatsApp Web.",
-    contact_whatsapp_btn: "Ouvri WhatsApp",
-
-    footer_copy: "Bati ak pasyon ak presizyon. Ouvè pou opòtinite nan tout mond lan.",
-    footer_rights: "Tout dwa rezève.",
   },
 };
