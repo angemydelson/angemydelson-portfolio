@@ -58,10 +58,11 @@ document.addEventListener("click", () => {
 langDropdown.addEventListener("click", (e) => e.stopPropagation());
 
 document.querySelectorAll(".lang-option").forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
     setLanguage(btn.dataset.lang);
     langDropdown.classList.remove("open");
-    langBtn.setAttribute("aria-expanded", false);
+    langBtn.setAttribute("aria-expanded", "false");
     // Close mobile menu
     document.getElementById("mobileMenu").classList.remove("open");
     document.getElementById("hamburger").classList.remove("active");
@@ -144,33 +145,6 @@ document
     el.classList.add("animate-on-scroll");
     observer.observe(el);
   });
-
-// ─── Contact Form ─────────────────────────────────────────────────────────────
-const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector("button[type=submit]");
-  const name = contactForm.querySelector("#formName").value.trim();
-  const email = contactForm.querySelector("#formEmail").value.trim();
-  const message = contactForm.querySelector("#formMessage").value.trim();
-
-  // Basic validation
-  if (!name || !email || !message) return;
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
-
-  // Build mailto link
-  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-  window.location.href = `mailto:delsonysuperdel@gmail.com?subject=${subject}&body=${body}`;
-
-  btn.textContent = "✓ Message Sent!";
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = translations[currentLang].form_send || "Send Message";
-    btn.disabled = false;
-    contactForm.reset();
-  }, 3000);
-});
 
 // ─── Smooth Scroll ────────────────────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

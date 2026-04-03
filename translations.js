@@ -21,7 +21,7 @@ const translations = {
     about_title: "Crafting Intelligent Solutions",
     about_img_caption: "UN Innovation Event",
     about_lead:
-      "I'm a Software Engineer from Chapecó, Brazil, with a deep focus on Artificial Intelligence and the practical application of Machine Learning at scale.",
+      "I'm a Software Engineer from Curitiba, Brazil, with a deep focus on Artificial Intelligence and the practical application of Machine Learning at scale.",
     about_para1:
       "My journey started with a passion for algorithms and grew into a specialization in Generative AI — building systems that understand language, retrieve knowledge intelligently, and respond with context and precision.",
     about_para2:
@@ -77,7 +77,7 @@ const translations = {
     exp1_h3: "Collaborates in agile teams with multidisciplinary engineering backgrounds",
     exp2_role: "AI Research & Development Fellow",
     exp2_desc:
-      "Led the technical development of an institutional Generative AI system as part of the "Professional Development and IT Innovation" extension program (1,280 hours). Built a complete RAG platform from scratch — covering ingestion pipelines, vector search, LLM integration, and a fully functional React frontend with authentication and role management.",
+      "Led the technical development of an institutional Generative AI system as part of the \"Professional Development and IT Innovation\" extension program (1,280 hours). Built a complete RAG platform from scratch — covering ingestion pipelines, vector search, LLM integration, and a fully functional React frontend with authentication and role management.",
     exp2_h1: "Built a full-stack RAG system: ingestion → embeddings → vector search → LLM → citations",
     exp2_h2: "Integrated WhatsApp chatbot with direct institutional database queries",
     exp2_h3: "Implemented auth, RBAC, session management, and end-to-end tests",
@@ -138,6 +138,11 @@ const translations = {
     form_send: "Send Message",
     form_note: "I usually respond within 24–48 hours.",
 
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Send me a message on WhatsApp",
+    contact_whatsapp_sub: "Click below to start a conversation directly on WhatsApp Web.",
+    contact_whatsapp_btn: "Open WhatsApp",
+
     footer_copy: "Built with passion and precision. Open to opportunities worldwide.",
     footer_rights: "All rights reserved.",
   },
@@ -164,7 +169,7 @@ const translations = {
     about_title: "Construindo Soluções Inteligentes",
     about_img_caption: "Evento de Inovação — ONU",
     about_lead:
-      "Sou Engenheiro de Software de Chapecó, Brasil, com foco profundo em Inteligência Artificial e na aplicação prática de Machine Learning em escala.",
+      "Sou Engenheiro de Software de Curitiba, Brasil, com foco profundo em Inteligência Artificial e na aplicação prática de Machine Learning em escala.",
     about_para1:
       "Minha trajetória começou com paixão por algoritmos e evoluiu para uma especialização em IA Generativa — criando sistemas que entendem linguagem, recuperam conhecimento de forma inteligente e respondem com contexto e precisão.",
     about_para2:
@@ -220,7 +225,7 @@ const translations = {
     exp1_h3: "Colabora em times ágeis com perfis de engenharia multidisciplinares",
     exp2_role: "Pesquisador & Desenvolvedor em IA",
     exp2_desc:
-      "Liderou o desenvolvimento técnico de um sistema de IA Generativa institucional no projeto de extensão "Desenvolvimento Profissional e Inovação em TI" (1.280 horas). Construiu uma plataforma RAG completa do zero — cobrindo pipelines de ingestão, busca vetorial, integração LLM e frontend React com autenticação e gestão de papéis.",
+      "Liderou o desenvolvimento técnico de um sistema de IA Generativa institucional no projeto de extensão \"Desenvolvimento Profissional e Inovação em TI\" (1.280 horas). Construiu uma plataforma RAG completa do zero — cobrindo pipelines de ingestão, busca vetorial, integração LLM e frontend React com autenticação e gestão de papéis.",
     exp2_h1: "Construiu um sistema RAG completo: ingestão → embeddings → busca vetorial → LLM → citações",
     exp2_h2: "Integrou chatbot WhatsApp com consultas diretas a bancos de dados institucionais",
     exp2_h3: "Implementou autenticação, RBAC, gestão de sessões e testes end-to-end",
@@ -281,6 +286,11 @@ const translations = {
     form_send: "Enviar Mensagem",
     form_note: "Costumo responder em 24–48 horas.",
 
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Me mande mensagem pelo WhatsApp",
+    contact_whatsapp_sub: "Clique abaixo para iniciar uma conversa diretamente no WhatsApp Web.",
+    contact_whatsapp_btn: "Abrir WhatsApp",
+
     footer_copy: "Construído com paixão e precisão. Aberto a oportunidades no mundo todo.",
     footer_rights: "Todos os direitos reservados.",
   },
@@ -307,7 +317,7 @@ const translations = {
     about_title: "Créer des solutions intelligentes",
     about_img_caption: "Événement Innovation — ONU",
     about_lead:
-      "Je suis ingénieur logiciel basé à Chapecó, au Brésil, avec un fort intérêt pour l'intelligence artificielle et l'application pratique du machine learning à grande échelle.",
+      "Je suis ingénieur logiciel basé à Curitiba, au Brésil, avec un fort intérêt pour l'intelligence artificielle et l'application pratique du machine learning à grande échelle.",
     about_para1:
       "Mon parcours a commencé par une passion pour les algorithmes et a évolué vers une spécialisation en IA générative — en construisant des systèmes qui comprennent le langage, récupèrent la connaissance intelligemment et répondent avec contexte et précision.",
     about_para2:
@@ -424,6 +434,11 @@ const translations = {
     form_send: "Envoyer le message",
     form_note: "Je réponds généralement dans les 24 à 48 heures.",
 
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Envoyez-moi un message sur WhatsApp",
+    contact_whatsapp_sub: "Cliquez ci-dessous pour démarrer une conversation directement sur WhatsApp Web.",
+    contact_whatsapp_btn: "Ouvrir WhatsApp",
+
     footer_copy: "Construit avec passion et précision. Ouvert aux opportunités dans le monde entier.",
     footer_rights: "Tous droits réservés.",
   },
@@ -450,7 +465,7 @@ const translations = {
     about_title: "Creando soluciones inteligentes",
     about_img_caption: "Evento de Innovación — ONU",
     about_lead:
-      "Soy Ingeniero de Software de Chapecó, Brasil, con un enfoque profundo en Inteligencia Artificial y la aplicación práctica del Machine Learning a escala.",
+      "Soy Ingeniero de Software de Curitiba, Brasil, con un enfoque profundo en Inteligencia Artificial y la aplicación práctica del Machine Learning a escala.",
     about_para1:
       "Mi trayectoria comenzó con una pasión por los algoritmos y creció hasta convertirse en una especialización en IA generativa — construyendo sistemas que comprenden el lenguaje, recuperan conocimiento de forma inteligente y responden con contexto y precisión.",
     about_para2:
@@ -567,6 +582,11 @@ const translations = {
     form_send: "Enviar mensaje",
     form_note: "Generalmente respondo en 24–48 horas.",
 
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Envíame un mensaje por WhatsApp",
+    contact_whatsapp_sub: "Haz clic abajo para iniciar una conversación directamente en WhatsApp Web.",
+    contact_whatsapp_btn: "Abrir WhatsApp",
+
     footer_copy: "Construido con pasión y precisión. Abierto a oportunidades en todo el mundo.",
     footer_rights: "Todos los derechos reservados.",
   },
@@ -593,7 +613,7 @@ const translations = {
     about_title: "Kreye Solisyon Entèlijan",
     about_img_caption: "Evènman Inovasyon — ONU",
     about_lead:
-      "Mwen se yon Enjenyè Lojisyèl ki soti Chapecó, Brezil, ak yon gwo enterè nan Entèlijans Atifisyèl ak aplikasyon pratik Machine Learning nan echèl.",
+      "Mwen se yon Enjenyè Lojisyèl ki soti Curitiba, Brezil, ak yon gwo enterè nan Entèlijans Atifisyèl ak aplikasyon pratik Machine Learning nan echèl.",
     about_para1:
       "Vwayaj mwen te kòmanse ak yon pasyon pou algoritm epi vin yon espesyalizasyon nan IA Generatif — bati sistèm ki konprann lang, rekipere konesans yon fason entèlijan epi reponn ak kontèks ak presizyon.",
     about_para2:
@@ -709,6 +729,11 @@ const translations = {
     form_message_placeholder: "Di mwen sou pwojè ou oswa opòtinite ou...",
     form_send: "Voye Mesaj",
     form_note: "Mwen reponn anjeneral nan 24–48 è.",
+
+    contact_whatsapp_label: "WhatsApp",
+    contact_whatsapp_cta: "Voye mwen yon mesaj sou WhatsApp",
+    contact_whatsapp_sub: "Klike anba a pou kòmanse yon konvèsasyon dirèkteman sou WhatsApp Web.",
+    contact_whatsapp_btn: "Ouvri WhatsApp",
 
     footer_copy: "Bati ak pasyon ak presizyon. Ouvè pou opòtinite nan tout mond lan.",
     footer_rights: "Tout dwa rezève.",
